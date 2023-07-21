@@ -1,58 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 *,
 ::before,
-::after {box-sizing: border-box;}
-
-body {margin: 0px;
-font-family: "Roboto",sans-serif;
+::after {
+  box-sizing: border-box;
 }
 
-header{font-family: "Shrikhand", cursive;
-text-align: center;
-box-shadow: 0 0 0.5em rgb(0 0 0 /25%);
-padding: 0.3em;
-margin: 0;
-position: relative;
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
 }
 
-main .city {display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    background-color: #F3F3F3;
-    text-align: center;
-padding: 0.5em;
+header {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+  padding: 0.3em;
+  margin: 0;
+  position: relative;
+}
+
+main .city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  background-color: #F3F3F3;
+  text-align: center;
+  padding: 0.5em;
 }
 
 main .city i {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
-.explorer {text-align: center;
+.explorer {
+  text-align: center;
 }
 
 .explorer h2 {
-    margin-top: 2em;
-    font-size: 2em;
+  margin-top: 2em;
+  font-size: 2em;
 }
 
-.explorer p {font-size: 1em;}
+.explorer p {
+  font-size: 1em;
+}
 
-.explorer button {color: white;
-    font-weight: 300;
-    font-size: 1.5em;
-    padding: 1em 2em;
-    border: none;
-    border-radius: 2em;
-    box-shadow: 2px 1px 16px -3px black;
-    background-image: linear-gradient(to top, purple,pink);
-    transition: transform 200ms;
-    margin-top: 1em; }
+.explorer button {
+  color: white;
+  font-weight: 300;
+  font-size: 1.5em;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 2em;
+  box-shadow: 2px 1px 16px -3px black;
+  background-image: linear-gradient(to top, purple, pink);
+  transition: transform 200ms;
+  margin-top: 1em;
+}
 
 .explorer button:hover {
-    transform: scale(1.02);
-    opacity: 0.9;
-
+  transform: scale(1.02);
+  opacity: 0.9;
 }
+
+/*# sourceMappingURL=style.css.map */
