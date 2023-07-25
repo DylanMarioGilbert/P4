@@ -1,0 +1,11 @@
+.city {display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: #F3F3F3;
+    text-align: center;
+padding: 0.5em;
+& i {
+    font-size: 1.5em;
+}
+}
