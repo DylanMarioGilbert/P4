@@ -4,11 +4,14 @@
   "description": "Openclassrooms project 4",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch style.scss style.css"
+    "sass": "sass --watch style.scss style.css",
+    "build": "postcss style.css -u autoprefixer -o ./build/style.min.css"
   },
   "author": "Dylan Gilbert",
   "license": "ISC",
   "devDependencies": {
+    "postcss": "^8.4.27",
+    "postcss-cli": "^10.1.0",
     "sass": "^1.64.0"
   },
   "dependencies": {

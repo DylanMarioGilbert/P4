@@ -70,6 +70,7 @@ background-color: colors.$lightergrey;
     }
     .menus__category{
         overflow: hidden;
+    
 
        
         .menu-item {
@@ -96,7 +97,7 @@ background-color: colors.$lightergrey;
                 display:flex;
                 align-items: flex-end;
             }
-            
+
             .menu-item__description {
                 padding: 1em;
                 overflow: hidden;
