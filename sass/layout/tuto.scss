@@ -6,6 +6,7 @@
 .tuto {
     counter-reset: steps;
     margin-bottom: 2em;
+    
     & ol {
         display: flex;
         gap: 2em;

@@ -41,7 +41,8 @@ a {
 }
 
 header {
-  font-family: "Shrikhand", cursive;
+  background-color: #ffffff;
+  font-family: "Shrikhand", "cursive";
   text-align: center;
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
   padding: 0.3em;
@@ -50,11 +51,11 @@ header {
 }
 
 .city {
+  background-color:lightgrey;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1em;
-  background-color: #F3F3F3;
   text-align: center;
   padding: 0.5em;
 }
@@ -129,6 +130,8 @@ header {
   }
 }
 .tuto {
+  padding: 3em 6em;
+  background-color: white;
   counter-reset: steps;
   margin-bottom: 2em;
 }
@@ -284,11 +287,23 @@ header {
 
 footer {
   background-color: #353535;
+  ;
   padding: 1em 2em;
   color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
+@media (max-width:1000px){
+  footer {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+  }
+}
+
 footer h2 {
-  font-family: "Shrikand", "sans-serif";
+  font-family: "Shrikhand", "sans-serif";
   font-weight: 500;
   padding: 1em 0;
 }
@@ -340,13 +355,14 @@ body {
   margin-top: -2em;
 }
 #page-resto .resto__title h2 {
-  font-family: "Shrikand", "cursive";
+  font-family: "Shrikhand", "cursive";
   padding: 2em 1em;
   position: relative;
   background-color: white;
   border-radius: 0 0 1em 1em;
   border-radius: 2em 2em 0 0;
   background-color: #F6F6F6;
+  text-align: center;
 }
 #page-resto .resto__title h2::before {
   display: inline-block;
