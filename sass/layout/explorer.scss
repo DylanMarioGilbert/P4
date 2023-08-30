@@ -1,7 +1,10 @@
 @use "../utils/mixins";
 @use "../utils/colors";
 
-.explorer {text-align: center;
+.explorer {
+    background-color: colors.$lightergrey;
+    text-align: center;
+    font-weight: 300;
     margin: 2em;
     & h2 {
         font-size: 1.5em;
@@ -9,9 +12,11 @@
     }
     & p {
         font-size: 1em;
+        margin-bottom: 1.5em;
     }
     
     & button {
+        margin-bottom: 1.5em;
         @include mixins.base-button;
         font-size: 1em;
        

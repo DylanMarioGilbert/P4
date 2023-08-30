@@ -4,10 +4,15 @@
 
 
 .tuto {
-    counter-reset: steps;
+   
+    background-color: colors.$lightestgrey;
     margin-bottom: 2em;
+    counter-reset:steps;
+    
     
     & ol {
+        
+    
         display: flex;
         gap: 2em;
         @media (max-width : variables.$breakpoint){
