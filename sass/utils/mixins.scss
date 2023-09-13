@@ -34,31 +34,14 @@
             right: 1em;
             top: 50%;
             transform: translateY(-50%);
+            opacity: $opacity;
             color: $color;
             background-clip: text;
             -webkit-background-clip: text;
-            opacity: $opacity;
             transition: all 200ms ease-in-out;
 }
 
-@mixin heart-animated {
-    position:left;
-    background-color: white;
-    border-radius: 0 0 1em 1em;
-    &::before{
-        @include heart;
-    }
-    &::after{
-        @include heart($opacity:0, $font-weight: 900, $color: transparent);
-        @include gradient (1);
-    }
-    &:hover::after {
-        opacity: 1;
-        transform: translateY(-50%) scale(1.1);
-    }
 
-    
-}
 
 @mixin base-button {color: white;
     font-weight: 300;

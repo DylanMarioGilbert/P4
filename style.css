@@ -11,11 +11,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-main {
+.container {
   padding: 0 7em;
 }
 @media (max-width: 1000px) {
-  main {
+  .container {
     padding: 0 1em;
   }
 }
@@ -138,6 +138,7 @@ header {
   }
 }
 .tuto {
+  padding: 2em 0;
   background-color: #ffffff;
   margin-bottom: 2em;
   counter-reset: steps;
@@ -240,58 +241,21 @@ header {
   background-image: url("../../assets/menu-4.jpg");
 }
 #homepage .menus .card__description {
-  position: left;
   background-color: white;
   border-radius: 0 0 1em 1em;
 }
-#homepage .menus .card__description::before {
-  display: inline-block;
-  position: absolute;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font awesome 5 free";
-  font-weight: 400;
-  content: "\f004";
-  font-size: 2em;
-  right: 1em;
-  top: 50%;
-  transform: translateY(-50%);
-  color: inherit;
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 1;
-  transition: all 200ms ease-in-out;
+#homepage .menus .card__description h3 {
+  padding: 0.1em;
 }
-#homepage .menus .card__description::after {
-  display: inline-block;
-  position: absolute;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font awesome 5 free";
-  font-weight: 900;
-  content: "\f004";
-  font-size: 2em;
-  right: 1em;
-  top: 50%;
-  transform: translateY(-50%);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-  transition: all 200ms ease-in-out;
-  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
-}
-#homepage .menus .card__description:hover::after {
-  opacity: 1;
-  transform: translateY(-50%) scale(1.1);
-}
-#homepage .menus .card__description h3,
 #homepage .menus .card__description p {
-  padding: none;
+  padding: 0.1em;
+  font-weight: 100;
+}
+#homepage .menus .card__description .heart {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
 }
 
 footer {
@@ -349,64 +313,35 @@ body {
   object-fit: cover;
   object-position: center;
 }
+#page-resto .resto__title {
+  background-color: #F6F6F6;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
 #page-resto .resto__title h2 {
+  text-align: center;
+  transform: translateY(-2em);
   font-family: "Shrikhand";
   font-size: 2em;
-  padding: 2em 1em;
-  position: left;
-  background-color: white;
-  border-radius: 0 0 1em 1em;
+  padding: 2em 0 0 0;
   border-radius: 2em 2em 0 0;
   background-color: #F6F6F6;
-  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
-#page-resto .resto__title h2::before {
-  display: inline-block;
-  position: absolute;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font awesome 5 free";
-  font-weight: 400;
-  content: "\f004";
-  font-size: 2em;
-  right: 1em;
-  top: 50%;
-  transform: translateY(-50%);
-  color: inherit;
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 1;
-  transition: all 200ms ease-in-out;
-}
-#page-resto .resto__title h2::after {
-  display: inline-block;
-  position: absolute;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font awesome 5 free";
-  font-weight: 900;
-  content: "\f004";
-  font-size: 2em;
-  right: 1em;
-  top: 50%;
-  transform: translateY(-50%);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-  transition: all 200ms ease-in-out;
-  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
-}
-#page-resto .resto__title h2:hover::after {
-  opacity: 1;
-  transform: translateY(-50%) scale(1.1);
+#page-resto .resto__title h2 .heart {
+  padding-left: 1.5em;
+  padding-right: 1em;
+  display: flex;
+  justify-content: center;
 }
 #page-resto .resto-main {
   padding: 0 1em;
+  margin-top: -2em;
 }
 #page-resto .menus {
   display: grid;
@@ -538,6 +473,31 @@ body {
 #page-resto section.order button:hover {
   transform: scale(1.02);
   opacity: 0.9;
+}
+
+.heart {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  position: relative;
+  width: fit-content;
+  font-size: xx-large;
+}
+.heart :nth-child(2) {
+  position: absolute;
+  transform: translateY(50%);
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  display: flex;
+  align-items: flex-end;
+}
+.heart:hover :nth-child(2) {
+  opacity: 1;
+  transform: translateY(0%) scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */
