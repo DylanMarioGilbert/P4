@@ -1,7 +1,6 @@
+@use "./utils/colors";
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
-
-
 *,
 ::before,
 ::after {
@@ -12,7 +11,9 @@ body {
     margin: 0;
     font-family: "Roboto", sans-serif;
 }
-
+&#homepage {
+    background-color: colors.$lightergrey;
+}
 .container {
     padding: 0 7em;
 

@@ -3,9 +3,6 @@
 @use "../utils/colors";
 @use "../utils/animations";
 
-body {
-    background-color: colors.$lightergrey;
-}
 
 #page-resto {
 
@@ -26,20 +23,27 @@ body {
     }
 
 
-    .banner img {
-        display: block;
-        width: 100%;
-        height: 70vh;
-        object-fit: cover;
-        object-position: center;
 
+    .resto-main {
+        background-color: colors.$lightergrey;
+    }
+
+    .banner {
+
+        img {
+            display: block;
+            width: 100%;
+            height: 70vh;
+            object-fit: cover;
+            object-position: center;
+        }
 
     }
 
     .resto__title {
         background-color: colors.$lightergrey;
         display: flex;
-        align-items:flex-start;
+        align-items: flex-start;
         justify-content: center;
         
         h2 {
@@ -54,9 +58,9 @@ body {
             display: flex;
             justify-content: center;
             flex-direction: row;
-            align-items:center;
+            align-items: center;
 
-            .heart{
+            .heart {
                 padding-left: 1.5em;
                 padding-right: 1em;
                 display: flex;
